@@ -1,0 +1,82 @@
+h3 {
+  line-height: 0;
+}
+
+p {
+  line-height: 0;
+}
+
+body {
+  background-color: black;
+  color: wheat;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 40px;
+  height: 450px;
+}
+.main .card {
+  position: relative;
+  height: 400px;
+  width: 60px;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  cursor: pointer;
+}
+.main .card:hover {
+  height: 480px;
+  transition: all 0.6s ease-in-out;
+}
+.main .card .img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  margin: -5px;
+}
+.main .card .label {
+  position: absolute;
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+.main .card .label .icon-place {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  opacity: 80%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .card .label .icon-place .fi {
+  color: wheat;
+  scale: 125%;
+}
+.main .active {
+  width: 400px;
+  transition: all 1s ease-in-out;
+}
+.main .starting-card {
+  width: 60px;
+  transition: all 1s ease-in-out;
+}
+
+.hidden-element {
+  display: none;
+}/*# sourceMappingURL=incex.css.map */
