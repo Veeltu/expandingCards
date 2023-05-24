@@ -53,6 +53,7 @@ body {
             object-fit: cover;
             border-radius: 25px;
             margin: -5px;
+ 
         }
         .label {
             position: absolute;
@@ -72,10 +73,11 @@ body {
                 .fi {
                     color: wheat;
                     scale: 125%;
+                    transition: transform 0.5s ease-in-out;
+                    animation: spin 1s infinite; 
                 }
             }
             .info {
-
             }
         }
     }
@@ -102,3 +104,12 @@ body {
 .hidden-element {
     display: none;
   }
+
+//   @keyframes spin {
+//     0% {
+//       transform: rotate(0deg);
+//     }
+//     100% {
+//       transform: rotate(360deg);
+//     }
+//   }
