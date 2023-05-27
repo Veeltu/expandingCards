@@ -49,18 +49,18 @@ cards.forEach((card, index) => {
 });
 
 // button RESET
-button.addEventListener("click", () => {
-  cards.forEach(card => {
-    if (card.classList.contains("active")) {
-      setTimeout(() => {
-        card.classList.remove("active");
-        card.classList.add("starting-card");
-        infoElementAll.forEach(info => {
-          info.classList.add("hidden-element");
-        });
-        const previousIcon = icons[Array.from(cards).indexOf(card)];
-        previousIcon.style.transform = "rotate(0deg)"; // Reset the icon rotation
-      }, 200);
-    }
-  });
-});
+// button.addEventListener("click", () => {
+//   cards.forEach(card => {
+//     if (card.classList.contains("active")) {
+//       setTimeout(() => {
+//         card.classList.remove("active");
+//         card.classList.add("starting-card");
+//         infoElementAll.forEach(info => {
+//           info.classList.add("hidden-element");
+//         });
+//         const previousIcon = icons[Array.from(cards).indexOf(card)];
+//         previousIcon.style.transform = "rotate(0deg)"; // Reset the icon rotation
+//       }, 200);
+//     }
+//   });
+// });
